@@ -1,0 +1,90 @@
+body, html{
+    height: 100%;
+}
+
+body{
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    color: #385555;
+}
+.list-wrapper{
+    background-color: white;
+    width: 90%;
+    max-width: 650px;
+    max-height: 450px;
+    overflow-y: auto;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.2);
+    border-radius: 6px;
+    margin: 0;
+}
+.list-items{
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+    margin: 15px;
+    border-bottom: 1px solid #eee;
+    
+    padding: 15px;
+}
+.list-image img{
+    border-radius: 50%;
+    width: 85%;
+    margin-right: 0;
+}
+.list{
+    list-style-type: none;
+    padding: 0;
+}
+.list-content p{
+    margin-left: 0;
+    
+    flex-grow: 1;
+}
+.list-action{
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    opacity: 0;
+    
+    height: fit-content;
+   
+    gap: 8px;
+}
+
+.list-content-name{
+    font-size: 24px;
+    color: rgb(44, 66, 66);
+    margin: 0;
+    
+}
+.list-content-email{
+    font-size: 18px;
+    color: rgba(44, 66, 66, 0.5);
+}
+
+.list-items:hover{
+    background-color: #e8e8e8;
+    border-radius: 10px;
+}
+.list-items:active{
+    background-color: #cfcfcf;
+}
+
+.list-items:hover .list-action{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    opacity: 0.5;
+    
+
+}
